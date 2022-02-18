@@ -100,4 +100,9 @@ abstract class GamesServicesPlatform extends PlatformInterface {
   Future<String?> getPlayerID() async {
     throw UnimplementedError("not implemented.");
   }
+
+  /// Get the Token.
+  Future<Object> getToken() async {
+    return _token;
+  }
 }

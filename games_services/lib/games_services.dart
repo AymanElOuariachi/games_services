@@ -87,4 +87,10 @@ class GamesServices {
   static Future<String?> getPlayerID() async {
     return await GamesServicesPlatform.instance.getPlayerID();
   }
+
+  /// Get the player id.
+  /// On iOS the player id is unique for your game but not other games.
+  static Future<Object?> getToken() async {
+    return await GamesServicesPlatform.instance.getToken();
+  }
 }
